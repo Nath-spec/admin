@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CliniCare - Patient Management</title>
+  <link rel="stylesheet" href="front.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>CliniCare</h2>
+      <br>
+      <ul class="menu">
+        <li><a href="dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="patient.html"><i class="fa fa-user"></i> Patient</a></li>
+        <li class="active"><a href="staff.html"><i class="fa fa-users"></i> Staff</a></li>
+        <li><a href="appointments.html"><i class="fa fa-calendar"></i> Appointments</a></li>
+        <li><a href="notifications.html"><i class="fa fa-bell"></i> Notification</a></li>
+        <li><a href="setting.html"><i class="fa fa-cog"></i> Settings</a></li>
+      </ul>
+    </div>
+
+        <!-- Main Content -->
+    <div class="main">
+      <div class="top-bar">
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="admin">
+          <img src="admin.jpg" alt="Admin">
+          <span>Admin</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Staff Management</h1>
+
+        <div class="patient-box">
+          <h3>Staff List</h3>
+          <table class="patient-table">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>SCHEDULE</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>Oct. 26, 2025</td>
+                <td><button class="view-btn">View Record</button></td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Nov. 12, 2026</td>
+                <td><button class="view-btn">View Record</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

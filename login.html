@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinicare - Admin Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Welcome To <br><span>CLINICARE</span></h1>
+      <p>
+        Managing patient appointments, doctor schedules, and medical records
+        securely and efficiently. Please select your portal below to log in or
+        register.
+      </p>
+    </div>
+
+    <div class="right-section">
+      <div class="form-content">
+        <h2>Admin Login</h2>
+        <p class="subtitle">Sign in to your account</p>
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <div class="forgot">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p class="login-text">
+          Don't have an account?
+          <a href="#">Log In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Redirect to dashboard regardless of input
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // stop default submit
+      // Optionally you can read the inputs (if you want to store or show them)
+      // const email = document.getElementById('email').value;
+      // const password = document.getElementById('password').value;
+
+      // Redirect to dashboard.html (must be in the same folder)
+      window.location.href = 'dashboard.html';
+    });
+  </script>
+</body>
+</html>

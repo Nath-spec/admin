@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Whole screen split into two halves */
+.container {
+  display: flex;
+  height: 100vh; /* fill entire viewport */
+  width: 100vw;  /* fill entire viewport */
+}
+
+/* Left panel */
+.left-section {
+  flex: 1;
+  background-color: #1f4a8a;
+  color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Right panel */
+.right-section {
+  flex: 1;
+  background-color: #f2f4f8; /* light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Just the form content — no white box, directly on light background */
+.form-content {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Headings */
+.form-content h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #1f4a8a;
+  outline: none;
+}
+
+/* Forgot link */
+.forgot {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot a {
+  font-size: 0.85rem;
+  color: #1f4a8a;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+button {
+  background-color: #1f4a8a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #173968;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-text a {
+  color: #1f4a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-section, .right-section {
+    width: 100%;
+    height: auto;
+  }
+}
